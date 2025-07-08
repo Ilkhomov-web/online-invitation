@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/createInvitation.css" />
+    <title>Create Invitation</title>
+  </head>
+  <body>
+    <div class="bg-video">
+      <video autoplay muted loop playsinline>
+        <source src="../assets/video/bg.mp4" type="video/mp4" />
+      </video>
+      <div class="video-content container">
+        <div class="select-invitation">
+          <!-- img js -->
+        </div>
+        <div class="get-invitation">
+          <h1>Ma'lumotlar to'ldiring</h1>
+          <form id="invitation-form">
+            <input type="text" name="kelin" placeholder="Kelin ismi" />
+            <input type="text" name="kuyov" placeholder="Kuyov ismi" />
+            <select name="wedding">
+              <option value="">To‘y turi</option>
+              <option value="Fotixa">Fotixa</option>
+              <option value="El oshi">El Oshi</option>
+              <option value="Hatna">Hatna</option>
+              <option value="Nikoh">Nikoh</option>
+            </select>
+            <input type="date" name="date" />
+            <input type="time" name="time" />
+            <input type="text" name="address" placeholder="Manzil" />
+            <button id="downloadBtn">Yuklab olish</button>
+          </form>
+        </div>
+        <div class="return">
+          <img src="../assets/emptyImg.webp" id="imgStatus" alt="" />
+          <img src="" id="returnImg" alt="" style="display: none" />
+          <div class="invitation-info"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script type="module" src="../assets/js/createInvitetion.js"></script>
+  </body>
+</html>

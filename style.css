@@ -81,7 +81,12 @@ nav button{
 .cards{
     width: 100%;
     display: flex;
+<<<<<<< HEAD
     justify-content: space-between;
+=======
+    justify-content: left;
+    gap: 30px;
+>>>>>>> 5418c1c (Removed large video file and added updated files)
     margin-top: 50px;
     align-items: center;
     flex-wrap: wrap;
